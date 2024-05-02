@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee3b1ef-3659-4a0a-80cb-6a200592708f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/IdType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Wallet.java" afterDir="false" />
@@ -39,12 +43,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "2024-master-WalletMethod",
+
+    "git-widget-placeholder": "Usuario",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Estefania Sora/Documents/Cursos/Bootcamp/Workshop_2/src/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "last_opened_file_path": "D:/ENZO/Cursos Autodidacta/Bootcamp Makaia/Módulo 2. Profundización/Workshop",
+    "onboarding.tips.debug.path": "C:/Users/Estefania Sora/Documents/Cursos/Bootcamp/Workshop_2/src/Main.java"
+
   }
 }]]></component>
   <component name="SharedIndexes">
