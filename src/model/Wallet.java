@@ -4,14 +4,17 @@ public class Wallet {
     private double numWallet;
     private double amount;
     private Transaction transaction;
+    private User user;
 
     public Wallet(double numWallet, double amount) {
         this.numWallet = numWallet;
         this.amount = amount;
     }
 
-    public void makeTransaction(){
-
+    public void makeTransaction(Transaction transaction){
+        if (transaction.getAmount() <=amount){
+            user = transaction.getSender();
+        }
     }
 
     public double getNumWallet() {
