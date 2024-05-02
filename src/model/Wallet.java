@@ -4,7 +4,8 @@ public class Wallet {
     private double numWallet;
     private double amount;
     private Transaction transaction;
-    private User user;
+    private User sender;
+    private User receiver;
 
     public Wallet(double numWallet, double amount) {
         this.numWallet = numWallet;
@@ -12,8 +13,13 @@ public class Wallet {
     }
 
     public void makeTransaction(Transaction transaction){
+        double result=0;
+
+
         if (transaction.getAmount() <=amount){
-            user = transaction.getSender();
+            result = amount - transaction.getAmount();
+
+
         }
     }
 

@@ -1,5 +1,5 @@
 package model;
-public class Usuario {
+public class User {
     // Atributos
     private String idUser;
     private String typeId;
@@ -7,7 +7,7 @@ public class Usuario {
     private String lastName;
 
     // Constructor
-    public Usuario(String idUser, String typeId, String name, String lastName) {
+    public User(String idUser, String typeId, String name, String lastName) {
         this.idUser = idUser;
         this.typeId = typeId;
         this.name = name;
