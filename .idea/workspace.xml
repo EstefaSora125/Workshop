@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee3b1ef-3659-4a0a-80cb-6a200592708f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CoinType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoinType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Wallet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2fua0mJT57bwnVTH3wdpaOANEXU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,7 +39,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "2024-master-WalletClass",
+    "git-widget-placeholder": "2024-master-WalletMethod",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/Estefania Sora/Documents/Cursos/Bootcamp/Workshop_2/src/Main.java",
     "project.structure.last.edited": "Project",
