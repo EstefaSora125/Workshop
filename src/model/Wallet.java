@@ -1,34 +1,30 @@
 package model;
 
 public class Wallet {
-    private double numWallet;
+    private String numWallet_1;
     private double amount;
     private Transaction transaction;
     private User sender;
-    private User receiver;
 
-    public Wallet(double numWallet, double amount) {
-        this.numWallet = numWallet;
+    public Wallet( double amount, User sender) {
+        this.numWallet_1 = sender.getIdUser();
         this.amount = amount;
     }
 
     public void makeTransaction(Transaction transaction){
-        double result=0;
+        User sender = new User();
+        User receiver;
 
 
-        if (transaction.getAmount() <=amount){
-            result = amount - transaction.getAmount();
+        if (numWallet_1.equals(transaction.getSender().getIdUser())){
 
-
+        if (transaction.getAmount()<=amount){
+                transaction.setAmount(amount - transaction.getAmount());
+                if (numWallet_2.equals(transaction.getReceiver().getName())){
+                    transaction.setAmount(amount  + transaction.getAmount());
+                }
+            }
         }
-    }
-
-    public double getNumWallet() {
-        return numWallet;
-    }
-
-    public void setNumWallet(double numWallet) {
-        this.numWallet = numWallet;
     }
 
     public double getAmount() {
@@ -42,7 +38,6 @@ public class Wallet {
     @Override
     public String toString() {
         return "Wallet{" +
-                "numWallet=" + numWallet +
                 ", amount=" + amount +
                 '}';
     }
