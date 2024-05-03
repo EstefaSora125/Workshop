@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ee3b1ef-3659-4a0a-80cb-6a200592708f" name="Changes" comment="">
-<<<<<<< HEAD
-=======
-      <change afterPath="$PROJECT_DIR$/src/model/IdType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-
->>>>>>> 7f5c253e5968e92275cc485c78378e2b76a5fe1b
+    <list default="true" id="119e6483-1358-4175-b861-bdc55f9cb54e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Wallet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,18 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-<<<<<<< HEAD
-    "git-widget-placeholder": "master",
-=======
-
-    "git-widget-placeholder": "Usuario",
->>>>>>> 7f5c253e5968e92275cc485c78378e2b76a5fe1b
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/ENZO/Cursos Autodidacta/Bootcamp Makaia/Módulo 2. Profundización/Workshop",
-    "onboarding.tips.debug.path": "C:/Users/Estefania Sora/Documents/Cursos/Bootcamp/Workshop_2/src/Main.java"
-
+    "git-widget-placeholder": "Transfer-TrabajoTransacción"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -74,5 +57,27 @@
       <updated>1714653197853</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/Transaction.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -28,8 +28,6 @@ public class User {
         return lastName;
     }
 
-
-
     // Información
     public String getShowData() {
         return "Usuario{" +
