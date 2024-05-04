@@ -21,13 +21,14 @@ public class Block {
         this.transaction = transaction;
     }
 
-    public void createTransaction(User sender, User receiver, double amount){
-        transaction =  new Transaction(generateIdTransaction(sender, receiver), amount, sender, receiver, LocalDateTime.now());
+    public Transaction createTransaction(User sender, User receiver, double amount){
+       return   new Transaction(generateIdTransaction(sender, receiver), amount, sender, receiver, LocalDateTime.now());
     }
 
     private String generateIdTransaction(User sender, User receiver){
         return  sender.getId()+ "-" + receiver.getId() + "-" + UUID.randomUUID().toString();
     }
+
 
     private String generateHash(Transaction transaction){
         return  transaction.getId()+ "-" + UUID.randomUUID().toString();

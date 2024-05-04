@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ee6793-be26-44d6-878a-8b9cdd7aed4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exceptions/WalletNotSame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Exchange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CoinType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoinType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Gestor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Exchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Exchange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/runner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/runner/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,9 +39,9 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "git-widget-placeholder": "2024-master-ChangeCoin",
+    "git-widget-placeholder": "2024-master-createBlock",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Estefania Sora/Documents/Cursos/Bootcamp/Workshop_2",
+    "last_opened_file_path": "C:/Users/Estefania Sora/Documents/Cursos/Bootcamp/Vehiculos Tefa",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
@@ -87,5 +81,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/Exchange.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

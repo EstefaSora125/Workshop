@@ -2,9 +2,11 @@ package model;
 
 import exceptions.OutOfMoney;
 import exceptions.WalletNoExist;
+import exceptions.WalletNotSame;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class Exchange {
 
@@ -26,10 +28,11 @@ public class Exchange {
         blocks.add(block);
     }
 
-    public void createBlock(User sender, User receiver, double amount) throws WalletNoExist, OutOfMoney {
+    public void createBlock(User sender, User receiver, double amount) throws WalletNoExist, OutOfMoney, WalletNotSame {
         Wallet senderWallet = null;
         Wallet receiverWallet = null;
         double send = amount;
+        Block block;
         String [] hasBlock;
         String[] idWallet;
 
@@ -44,24 +47,21 @@ public class Exchange {
             }
         }
 
-        if (senderWallet == null || receiverWallet == null) {
+        if (senderWallet == null && receiverWallet == null) {
             throw new WalletNoExist();
         }else if(senderWallet == receiverWallet){
-            throw new WalletNoExist();
+            throw new WalletNotSame();
         }else if (senderWallet.getAmount() < send) {
             throw new OutOfMoney();
         }else {
 
-            for (int i = 0; i < blocks.size(); i++) {
-                for (int j = 0; j < wallets.size(); j++) {
-                    hasBlock = blocks.get(i).getHash().split("-");
-                    idWallet = wallets.get(j).getId().split("-");
-                    //if (hasBlock[0].equals(idWallet[])){
-
-                    //}
-                }
-
+            if (blocks.isEmpty()){
+                block = new Block(new Transaction(generateIdTransaction(sender, receiver), send, sender, receiver, LocalDateTime.now()));
+            }else {
+                block = new Block(getLastHas(), new Transaction(generateIdTransaction(sender, receiver), send, sender, receiver, LocalDateTime.now()));
             }
+
+            addBlock(block);
 
             senderWallet.setAmount(senderWallet.getAmount() - send);
 
@@ -70,8 +70,15 @@ public class Exchange {
 
             }
             receiverWallet.setAmount(receiverWallet.getAmount() + send);
-           // addTransaction(transaction);
         }
+    }
+
+    private String getLastHas(){
+        return blocks.get(blocks.size()-1).getHash();
+    }
+
+    private String generateIdTransaction(User sender, User receiver){
+        return  sender.getId()+ "-" + receiver.getId() + "-" + UUID.randomUUID().toString();
     }
 
     private double changeCoin(String senderType, String reciverType,double coin){
@@ -128,10 +135,11 @@ public class Exchange {
             System.out.println(wallets.get(i).toString());
         }
     }
-    public void showBlock(){
-        for (int i = 0; i < blocks.size(); i++) {
-            System.out.println(blocks.get(i).toString());
 
+    public void show() {
+        for (int i = 0; i < blocks.size(); i++) {
+            System.out.println(blocks.get(i));
         }
     }
+
 }
