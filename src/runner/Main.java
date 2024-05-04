@@ -4,9 +4,6 @@ import exceptions.OutOfMoney;
 import exceptions.WalletNoExist;
 import model.*;
 
-import java.time.LocalDateTime;
-import java.util.Date;
-
 public class Main {
     public static void main(String[] args) throws WalletNoExist, OutOfMoney {
 
@@ -16,15 +13,15 @@ public class Main {
         Wallet walletEnzo =  new Wallet(200, usuarioEnzo, CoinType.YEN.getName());
         Wallet walletTefa =  new Wallet(100, usuarioTefa, CoinType.PESO_CO.getName());
 
-        Gestor gestor = new Gestor();
+        Exchange exchange = new Exchange();
 
-        gestor.addWallet(walletEnzo);
-        gestor.addWallet(walletTefa);
+        exchange.addWallet(walletEnzo);
+        exchange.addWallet(walletTefa);
 
         System.out.println("Saldo de Enzo: " + walletEnzo.getAmount());
         System.out.println("Saldo de Tefa: " + walletTefa.getAmount());
 
-        gestor.createTransaction(usuarioEnzo, usuarioTefa, 50);
+       // exchange.createTransaction(usuarioEnzo, usuarioTefa, 50);
         //gestor.createTransaction(usuarioEnzo, usuarioTefa, 1);
         //gestor.createTransaction(usuarioEnzo, usuarioTefa, 10);
 
@@ -38,6 +35,6 @@ public class Main {
         System.out.println("Saldo de Tefa: " + walletTefa.getAmount());
 
 
-        gestor.showTransaction();
+       // exchange.showTransaction();
     }
 }

@@ -4,28 +4,31 @@ import java.time.LocalDateTime;
 
 public class Transaction {
 
-    private  String idNumber;
+    private  String id;
     private double amount;
     private User sender;
     private User receiver;
-    private LocalDateTime dateTransaction;
+    private LocalDateTime date;
 
-    public Transaction(String idNumber, double amount, User sender, User receiver, LocalDateTime dateTransaction) {
-        this.idNumber = idNumber;
+    public Transaction(String id, double amount, User sender, User receiver, LocalDateTime date) {
+        this.id = id;
         this.amount = amount;
         this.sender = sender;
         this.receiver = receiver;
-        this.dateTransaction = dateTransaction;
+        this.date = date;
     }
 
-    @Override
+    public String getId() {
+        return id;
+    }
+
     public String toString() {
         return "Transaction{" +
-                "idNumber='" + idNumber + '\'' +
+                "idNumber='" + id + '\'' +
                 ", amount=" + amount +
                 ", sender=" + sender +
                 ", receiver=" + receiver +
-                ", dateTransaction=" + dateTransaction +
+                ", dateTransaction=" + date +
                 '}';
     }
 }
