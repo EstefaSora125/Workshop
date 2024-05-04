@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ee6793-be26-44d6-878a-8b9cdd7aed4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exceptions/OutOfMoney.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/WalletNoExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Gestor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/WalletNotSame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Exchange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/CoinType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoinType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/runner/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Gestor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/runner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/runner/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "git-widget-placeholder": "2024-Master-Transfer",
+    "git-widget-placeholder": "2024-master-ChangeCoin",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Estefania Sora/Documents/Cursos/Bootcamp/Workshop_2",
     "project.structure.last.edited": "Project",
@@ -54,7 +56,15 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="model" />
+      <recent name="exceptions" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

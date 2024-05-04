@@ -2,7 +2,7 @@ package model;
 
 
 public class Wallet {
-    private String numWallet;
+    private String id;
     private double amount;
     private User user;
 
@@ -12,7 +12,7 @@ public class Wallet {
         this.amount = amount;
         this.user = user;
         this.coin = coin;
-        this.numWallet = user.getIdUser();
+        this.id = user.getId();
     }
 
     public double getAmount() {
@@ -23,25 +23,19 @@ public class Wallet {
         this.amount = amount;
     }
 
-    public String getNumWallet() {
-        return numWallet;
+    public String getId() {
+        return id;
     }
 
     public String getCoin() {
         return coin;
     }
 
-
-    public void setCoin(String coin) {
-        this.coin = coin;
-    }
-
-    @Override
     public String toString() {
         return "Wallet{" +
-                "numWallet='" + numWallet + '\'' +
+                "numWallet='" + id + '\'' +
                 ", amount=" + amount +
-                ", user=" + user +
+                ", user=" + user.toString() +
                 '}';
     }
 }

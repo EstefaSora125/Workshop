@@ -3,7 +3,7 @@ package model;
 public enum CoinType {
     EURO("Euro", 0, 1.07, 164.57, 4181.47),
     DOLAR("Dolar Estadounidense",0.93,0,153.39 ,3897.50),
-    YEN("Yen", 0.0065, 0.0061, 0, 25.41),
+    YEN("Yen", 0.0065, 0.0061, 0, 25.42),
     PESO_CO("Peso colombiano", 0.00024,0.00026, 0.039,0 )
     ;
 
@@ -23,5 +23,21 @@ public enum CoinType {
 
     public String getName() {
         return name;
+    }
+
+    public double getPercentajeEuro() {
+        return percentajeEuro;
+    }
+
+    public double getPercentajeDolar() {
+        return percentajeDolar;
+    }
+
+    public double getPercentajeYen() {
+        return percentajeYen;
+    }
+
+    public double getPercentajePesoCol() {
+        return percentajePesoCol;
     }
 }

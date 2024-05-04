@@ -1,39 +1,28 @@
 package model;
 public class User {
     // Atributos
-    private String idUser;
+    private String id;
     private String typeId;
     private String name;
     private String lastName;
 
     // Constructor
-    public User(String idUser, String typeId, String name, String lastName) {
-        this.idUser = idUser;
+    public User(String id, String typeId, String name, String lastName) {
+        this.id = id;
         this.typeId = typeId;
         this.name = name;
         this.lastName = lastName;
     }
 
     // Getter
-    public String getIdUser() {
-        return idUser;
+    public String getId() {
+        return id;
     }
-    public String getTypeId() {
-        return typeId;
-    }
-    public String getName() {
-        return name;
-    }
-    public String getLastName() {
-        return lastName;
-    }
-
-
 
     // Información
     public String getShowData() {
         return "Usuario{" +
-                "idUser=" + idUser +
+                "idUser=" + id +
                 ", typeId='" + typeId + '\'' +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
