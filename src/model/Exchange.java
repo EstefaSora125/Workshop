@@ -4,9 +4,7 @@ import exceptions.OutOfMoney;
 import exceptions.WalletNoExist;
 import exceptions.WalletNotSame;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class Exchange {
 
@@ -114,14 +112,14 @@ public class Exchange {
     }
 
     public void showWallets(){
-        for (int i = 0; i < wallets.size(); i++) {
-            System.out.println(wallets.get(i).toString());
+        for (Wallet wallet : wallets) {
+            System.out.println(wallet.showData());
         }
     }
 
-    public void show() {
-        for (int i = 0; i < blocks.size(); i++) {
-            System.out.println(blocks.get(i));
+    public void showBlocks() {
+        for (Block block : blocks) {
+            System.out.println(block.showData());
         }
     }
 
