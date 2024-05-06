@@ -5,24 +5,18 @@ import java.util.UUID;
 
 public class Block {
 
-    private String hash;
-    private String previusHash;
+    private int hash;
+    private int previusHash;
 
     private Transaction transaction;
 
-    public Block(String previusHash, Transaction transaction) {
-        this.hash = generateHash(transaction);
+    public Block(int previusHash) {
         this.previusHash = previusHash;
-        this.transaction = transaction;
     }
 
-    public Block(Transaction transaction) {
-        this.hash = generateHash(transaction);
-        this.transaction = transaction;
-    }
-
-    public Transaction createTransaction(User sender, User receiver, double amount){
-       return   new Transaction(generateIdTransaction(sender, receiver), amount, sender, receiver, LocalDateTime.now());
+    public void createTransaction(User sender, User receiver, double amount){
+        transaction = new Transaction(generateIdTransaction(sender,receiver),amount, sender,receiver,LocalDateTime.now());
+        this.hash = generateHash(sender);
     }
 
     private String generateIdTransaction(User sender, User receiver){
@@ -30,20 +24,20 @@ public class Block {
     }
 
 
-    private String generateHash(Transaction transaction){
-        return  transaction.getId()+ "-" + UUID.randomUUID().toString();
+    private int generateHash(User sender){
+        return  (sender.getId()+ "-" + UUID.randomUUID().toString()).hashCode();
     }
 
-    public String getHash() {
+    public int getHash() {
         return hash;
     }
 
     @Override
     public String toString() {
-        return "Block{" +
-                "hash='" + hash + '\'' +
-                ", previusHash='" + previusHash + '\'' +
-                ", transaction=" + transaction.toString() +
-                '}';
+        return "Información del bloque " + '\n' +
+                " - Hash del bloque: " + hash + '\n' +
+                " - Hash previo del bloque: " + previusHash + '\n' +
+                transaction.toString() ;
+
     }
 }

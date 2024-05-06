@@ -14,33 +14,33 @@ public class Main {
 
         Wallet walletEnzo =  new Wallet(200, usuarioEnzo, CoinType.YEN.getName());
         Wallet walletTefa =  new Wallet(100, usuarioTefa, CoinType.PESO_CO.getName());
-        Wallet walletRaul =  new Wallet(500, usuarioRaul, CoinType.DOLAR.getName());
+        //Wallet walletRaul =  new Wallet(500, usuarioRaul, CoinType.DOLAR.getName());
 
         Exchange exchange = new Exchange();
 
         exchange.addWallet(walletEnzo);
         exchange.addWallet(walletTefa);
-        exchange.addWallet(walletRaul);
+        //exchange.addWallet(walletRaul);
 
-        System.out.println("Saldo de Enzo: " + walletEnzo.getAmount());
-        System.out.println("Saldo de Tefa: " + walletTefa.getAmount());
-        System.out.println("Saldo de Raul: " + walletTefa.getAmount());
-
-
+        System.out.println("Saldo de Enzo: " + walletEnzo.getAmount() + " " + walletEnzo.getCoin());
+        System.out.println("Saldo de Tefa: " + walletTefa.getAmount()+ " " + walletTefa.getCoin());
+        //System.out.println("Saldo de Raul: " + walletTefa.getAmount()+ " " + walletRaul.getCoin());
 
 
-        exchange.createBlock(usuarioEnzo, usuarioTefa, 1);
+
+        exchange.createBlock(usuarioEnzo, usuarioTefa, 50);
+        /*exchange.createBlock(usuarioEnzo, usuarioTefa, 1);
         exchange.createBlock(usuarioEnzo, usuarioRaul, 20);
         exchange.createBlock(usuarioRaul, usuarioTefa, 30);
         exchange.createBlock(usuarioRaul, usuarioEnzo, 59);
-        exchange.createBlock(usuarioTefa, usuarioRaul, 40);
+        exchange.createBlock(usuarioTefa, usuarioRaul, 40);*/
 
 
         System.out.println("-----");
 
-        System.out.println("Saldo de Enzo: " + walletEnzo.getAmount());
-        System.out.println("Saldo de Tefa: " + walletTefa.getAmount());
-        System.out.println("Saldo de Raul: " + walletTefa.getAmount());
+        System.out.println("Saldo de Enzo: " + walletEnzo.getAmount() + " " + walletEnzo.getCoin());
+        System.out.println("Saldo de Tefa: " + walletTefa.getAmount()+ " " + walletTefa.getCoin());
+        //System.out.println("Saldo de Raul: " + walletTefa.getAmount()+ " " + walletRaul.getCoin());
 
 
        exchange.show();

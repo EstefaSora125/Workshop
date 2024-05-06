@@ -32,10 +32,9 @@ public class Wallet {
     }
 
     public String toString() {
-        return "Wallet{" +
-                "numWallet='" + id + '\'' +
-                ", amount=" + amount +
-                ", user=" + user.toString() +
-                '}';
+        return "Información de la cartera: " +'\n' +
+                " - Número de la cartera: " + id + '\n' +
+                " - Dinero disponible: " + '\n' +
+                " - Usuario : " + user.toString() ;
     }
 }

@@ -18,17 +18,15 @@ public class Transaction {
         this.date = date;
     }
 
-    public String getId() {
-        return id;
+    private String createDateFormat(){
+        return + date.getDayOfMonth() + "/" + date.getMonth() + "/" + date.getYear() + " " + date.getHour()+ ":" +date.getMinute()+ ":" +date.getSecond();
     }
-
     public String toString() {
-        return "Transaction{" +
-                "idNumber='" + id + '\'' +
-                ", amount=" + amount +
-                ", sender=" + sender +
-                ", receiver=" + receiver +
-                ", dateTransaction=" + date +
-                '}';
+        return "Información transacción " + '\n'+
+                " - N°: " + id + '\n' +
+                " - Fecha transacción: " + createDateFormat() +'\n' +
+                " - Monto enviado: " + amount + '\n' +
+                " - Usuario que realiza la transacción : "+'\n' + sender.showBasicData() +'\n' +
+                " - Usuario que recibe la transacción: "+'\n' + receiver.showBasicData()  ;
     }
 }
