@@ -21,7 +21,7 @@ public class Transaction {
     private String createDateFormat(){
         return + date.getDayOfMonth() + "/" + date.getMonth() + "/" + date.getYear() + " " + date.getHour()+ ":" +date.getMinute()+ ":" +date.getSecond();
     }
-    public String toString() {
+    public String showData() {
         return "Información transacción " + '\n'+
                 " - N°: " + id + '\n' +
                 " - Fecha transacción: " + createDateFormat() +'\n' +
@@ -30,3 +30,4 @@ public class Transaction {
                 " - Usuario que recibe la transacción: "+'\n' + receiver.showBasicData()  ;
     }
 }
+
