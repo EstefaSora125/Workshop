@@ -20,12 +20,17 @@ public class User {
     }
 
     // Información
-    public String getShowData() {
-        return "Usuario{" +
-                "idUser=" + id +
-                ", typeId='" + typeId + '\'' +
-                ", name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
+    public String showBasicData() {
+        return "Información Usuario" + '\n' +
+                " - Nombre: " + name + '\n' +
+                " - Apellido: " + lastName;
+    }
+
+    public String showAllData() {
+        return "Información Usuario" + '\n' +
+                " - Número de identificación: " + id +'\n' +
+                " - Tipo de identificación: " + typeId + '\n' +
+                " - Nombre: " + name + '\n' +
+                " - Apellido: " + lastName;
     }
 }

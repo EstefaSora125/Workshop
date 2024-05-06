@@ -12,8 +12,6 @@ public class Exchange {
 
     private ArrayList<Wallet> wallets;
     private ArrayList<Block> blocks;
-    private int numWallet;
-    private int numBlock;
 
     public Exchange(){
         wallets = new ArrayList<>();
@@ -33,8 +31,6 @@ public class Exchange {
         Wallet receiverWallet = null;
         double send = amount;
         Block block;
-        String [] hasBlock;
-        String[] idWallet;
 
         for (Wallet wallet : wallets) {
             if (wallet != null) {
@@ -54,31 +50,17 @@ public class Exchange {
         }else if (senderWallet.getAmount() < send) {
             throw new OutOfMoney();
         }else {
-
-            if (blocks.isEmpty()){
-                block = new Block(new Transaction(generateIdTransaction(sender, receiver), send, sender, receiver, LocalDateTime.now()));
-            }else {
-                block = new Block(getLastHas(), new Transaction(generateIdTransaction(sender, receiver), send, sender, receiver, LocalDateTime.now()));
-            }
-
+            block = new Block(getLastHas());
             addBlock(block);
+            block.createTransaction(sender,receiver,amount);
 
             senderWallet.setAmount(senderWallet.getAmount() - send);
 
             if(!senderWallet.getCoin().equals(receiverWallet.getCoin())){
                 send = changeCoin(senderWallet.getCoin(), receiverWallet.getCoin(), send);
-
             }
             receiverWallet.setAmount(receiverWallet.getAmount() + send);
         }
-    }
-
-    private String getLastHas(){
-        return blocks.get(blocks.size()-1).getHash();
-    }
-
-    private String generateIdTransaction(User sender, User receiver){
-        return  sender.getId()+ "-" + receiver.getId() + "-" + UUID.randomUUID().toString();
     }
 
     private double changeCoin(String senderType, String reciverType,double coin){
@@ -127,8 +109,9 @@ public class Exchange {
         return 0;
     }
 
-
-
+    private int getLastHas(){
+        return (blocks.isEmpty() ? 0:  blocks.get(blocks.size()-1).getHash());
+    }
 
     public void showWallets(){
         for (int i = 0; i < wallets.size(); i++) {
