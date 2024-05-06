@@ -32,10 +32,19 @@ public class Main {
 
 
         exchange.createBlock(usuarioEnzo, usuarioTefa, 50);
+        System.out.println("-----------------------------------------");
         /*exchange.createBlock(usuarioEnzo, usuarioTefa, 1);
+        System.out.println("-----------------------------------------");
+
         exchange.createBlock(usuarioEnzo, usuarioRaul, 20);
+        System.out.println("-----------------------------------------");
+
         exchange.createBlock(usuarioRaul, usuarioTefa, 30);
+        System.out.println("-----------------------------------------");
+
         exchange.createBlock(usuarioRaul, usuarioEnzo, 59);
+        System.out.println("-----------------------------------------");
+
         exchange.createBlock(usuarioTefa, usuarioRaul, 40);*/
 
 
