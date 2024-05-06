@@ -31,10 +31,10 @@ public class Wallet {
         return coin;
     }
 
-    public String toString() {
+    public String showData() {
         return "Información de la cartera: " +'\n' +
                 " - Número de la cartera: " + id + '\n' +
                 " - Dinero disponible: " + '\n' +
-                " - Usuario : " + user.toString() ;
+                " - Usuario : " + user.showBasicData() ;
     }
 }

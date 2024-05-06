@@ -43,6 +43,6 @@ public class Main {
         //System.out.println("Saldo de Raul: " + walletTefa.getAmount()+ " " + walletRaul.getCoin());
 
 
-       exchange.show();
+       exchange.showBlocks();
     }
 }
