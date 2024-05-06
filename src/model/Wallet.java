@@ -1,9 +1,9 @@
 package model;
 
 /**
- * @author
+ * Corresponde a la información de la cartera
+ * @author Estefania Sora
  * @version 05/05/2024
- * Se crea la billetera por cada usuario
  */
 public class Wallet {
     private String id;
@@ -13,10 +13,10 @@ public class Wallet {
     private String coin;
 
     /**
-     * Constructor
-     * @param amount
-     * @param user
-     * @param coin
+     * Se crea la cartera
+     * @param amount Corresponde a la cantidad de dinero disponible en la cartera
+     * @param user Corresponde a la información del usuario
+     * @param coin Corresponde al tipo de moneda que se maneja
      */
     public Wallet(double amount, User user, String coin) {
         this.amount = amount;
@@ -26,37 +26,40 @@ public class Wallet {
     }
 
     /**
-     * @return cantidad de dinero en la billetera
+     * Permite obtener la cantidad de dinero en la billetera
+     * @return double
      */
     public double getAmount() {
         return amount;
     }
 
     /**
-     * @param amount
-     * Se modifica el monto en la billetera
+     * Permite modificar actualizar el monto disponible de la billetera
+     * @param amount Corresponde al monto al cual se va a actualizar
      */
     public void setAmount(double amount) {
         this.amount = amount;
     }
 
     /**
-     * @return el identificador de la billetera
+     * Se obtiene el id de la cartera
+     * @return String
      */
     public String getId() {
         return id;
     }
 
     /**
-     * @return el tipo de moneda o divisa
+     * Se obtiene el tipo de moneda o divisa
+     * @return String
      */
     public String getCoin() {
         return coin;
     }
 
     /**
-     *
-     * @return la información general de la billetera
+     * Muestra la información de la billetera
+     * @return String
      */
     public String showData() {
         return "Información de la cartera: " +'\n' +

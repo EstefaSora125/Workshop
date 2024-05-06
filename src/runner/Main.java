@@ -5,6 +5,9 @@ import exceptions.WalletNoExist;
 import exceptions.WalletNotSame;
 import model.*;
 
+/**
+ * Se realizan las pruebas de funcionamiento por consola de la aplicación
+ */
 public class Main {
     public static void main(String[] args) throws WalletNoExist, OutOfMoney, WalletNotSame {
 
