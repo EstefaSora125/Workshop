@@ -9,7 +9,7 @@ package model;
  * relación de cambio para las demás.
  */
 public enum CoinType {
-    EURO("Euro", 0, 1.07, 164.57, 4181.47),
+    EURO("Euro", 1, 1.07, 164.57, 4181.47),
     DOLAR("Dolar Estadounidense",0.93,0,153.39 ,3897.50),
     YEN("Yen", 0.0065, 0.0061, 0, 25.42),
     PESO_CO("Peso colombiano", 0.00024,0.00026, 0.039,0 )
@@ -23,11 +23,11 @@ public enum CoinType {
 
     /**
      * Constructor para el tipo de divisa
-     * @param name
-     * @param percentajeEuro
-     * @param percentajeDolar
-     * @param percentajeYen
-     * @param percentajePesoCol
+     * @param name Corresponde al nombre de la divida
+     * @param percentajeEuro Corresponde al valor de conversión de la moneda a Euro
+     * @param percentajeDolar Corresponde al valor de conversión de la moneda a Dolar
+     * @param percentajeYen Corresponde al valor de conversión de la moneda a Yen
+     * @param percentajePesoCol Corresponde al valor de conversión de la moneda a Peso Colombiano
      */
     CoinType(String name, double percentajeEuro, double percentajeDolar, double percentajeYen, double percentajePesoCol) {
         this.name = name;
@@ -38,6 +38,7 @@ public enum CoinType {
     }
 
     /**
+     * Permite obtener el nombre de la divisa
      * @return nombre de la divisa
      */
     public String getName() {
@@ -45,6 +46,7 @@ public enum CoinType {
     }
 
     /**
+     * Permite obtener al valor de conversión de la moneda a Euro
      * @return la conversión de la divisa escogida a Euro
      */
     public double getPercentajeEuro() {
@@ -52,6 +54,7 @@ public enum CoinType {
     }
 
     /**
+     * Permite obtener al valor de conversión de la moneda a Dolar
      * @return la conversión de la divisa escogida a Dolar
      */
     public double getPercentajeDolar() {
@@ -59,6 +62,7 @@ public enum CoinType {
     }
 
     /**
+     * obtener al valor de conversión de la moneda a Yen
      * @return la conversión de la divisa escogida a Yen
      */
     public double getPercentajeYen() {
@@ -66,6 +70,7 @@ public enum CoinType {
     }
 
     /**
+     * Permite obtener al valor de conversión de la moneda a Peso Colombiano
      * @return la conversión de la divisa escogida a Peso Colombiano
      */
     public double getPercentajePesoCol() {
